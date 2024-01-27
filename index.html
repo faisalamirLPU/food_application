@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="resources/js/jQuery.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -19,24 +21,24 @@
     <header>
         <nav>
             <div class="row">
-                <img class="logo" src="resources/css/img/logo-white.png" alt="logo">
+                <img class="logo" src="resources/css/img/logo-white.png" alt="logo" data-aos="flip-down" data-aos-duration="1000">
                 <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign-up</a></li>
+                    <li><a href="#feature">Food delivery</a></li>
+                    <li><a href="#hiw">How it works</a></li>
+                    <li><a href="#city">Our cities</a></li>
+                    <li><a href="#signup">Sign-up</a></li>
                 </ul>
             </div>
 
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food <br> Hello super healthy food</h1>
-            <a class="btn btn-full" href="#">I'm hungry</a>
-            <a class="btn btn-ghost" href="#">show me more </a>
+            <a class="btn btn-full" href="#plan">I'm hungry</a>
+            <a class="btn btn-ghost" href="#feature">show me more </a>
         </div>
     </header>
     <!-- feature section -->
-    <section class="section-features">
+    <section class="section-features" id="feature">
         <div class="row">
             <h2>get food fast &mdash; Not fast food</h2>
             <p class="long-copy">
@@ -87,7 +89,7 @@
 
     <!--Section for meals or menu-->
 
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -136,13 +138,13 @@
 
     <!--Steps section-->
 
-    <section class="section-steps">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img src="resources/css/img/app-iPhone.png" alt="phone-image" class="app-screen">
+                <img data-aos="slide-left" data-aos-duration="1000" src="resources/css/img/app-iPhone.png" alt="phone-image" class="app-screen">
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="works-step">
@@ -168,7 +170,7 @@
 
     <!--Section for cities-->
 
-    <section class="section-cities">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -229,7 +231,7 @@
     </section>
 
     <!--customer testimonials-->
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our customer can't live without us</h2>
         </div>
@@ -255,21 +257,21 @@
                     Delicious flavors and impeccable presentation! The food exceeded expectations, leaving my taste buds
                     in awe. Each bite was a delightful journey of savory perfection. The freshness of ingredients and
                     expertly crafted dishes showcased a true culinary masterpiece.
-                    <cite ><img src="resources/css/img/customer-3.jpg" alt="customer-3">Milton Champman</cite>
+                    <cite><img src="resources/css/img/customer-3.jpg" alt="customer-3">Milton Champman</cite>
                 </blockquote>
             </div>
         </div>
     </section>
 
     <!-- sign-up section -->
-    <section class="section-plans">
+    <section class="section-plans" id="plan" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="">
             <div class="col span_1_of_3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h3>Premium</h3>
                         <p class="plan-price"> $399 <span>/month</span></p>
                         <p class="plan-price-meal">That's only 13.99$ per meal</p>
@@ -278,7 +280,8 @@
                         <ul>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal everyday</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7</li>
-                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest
+                                creations</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
                         </ul>
                     </div>
@@ -298,8 +301,9 @@
                         <ul>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal in 10 days</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7</li>
-                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest creations</li>
-                            <li><ion-icon  class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
+                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest
+                                creations</li>
+                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
                         </ul>
                     </div>
                     <div>
@@ -331,7 +335,7 @@
     </section>
 
     <!-- User form -->
-    <section class="section-form">
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -390,7 +394,7 @@
                         <input type="submit" value="Send us">
                     </div>
                 </div>
-                
+
             </form>
         </div>
     </section>
@@ -424,6 +428,36 @@
     <!-- icon scripts -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
