@@ -115,14 +115,29 @@ input[type=submit]{
     float: right;
     list-style: none;
     margin-top: 55px;
+    display: flex;
     /* margin-right: 10%; */
 }
+
+
 
 .main-nav li{
     display: inline-block;
     margin-left: 40px;
     
 }
+
+.nav-toggle {
+    font-size: 2.5em;
+    cursor: none;
+    display: none; /* Initially hide the toggle on larger screens */
+    color: #fff;
+    float: right;
+    margin-top: 25px;
+    /* display: flex; */
+}
+
+
 
 .main-nav li a:link,
 .main-nav li a:visited{
