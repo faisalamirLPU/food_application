@@ -21,7 +21,8 @@
     <header>
         <nav>
             <div class="row">
-                <img class="logo" src="resources/css/img/logo-white.png" alt="logo" data-aos="flip-down" data-aos-duration="1000">
+                <img class="logo" src="resources/css/img/logo-white.png" alt="logo" data-aos="flip-down"
+                    data-aos-duration="1000">
                 <ul class="main-nav">
                     <li><a href="#feature">Food delivery</a></li>
                     <li><a href="#hiw">How it works</a></li>
@@ -145,7 +146,8 @@
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img data-aos="slide-left" data-aos-duration="1000" src="resources/css/img/app-iPhone.png" alt="phone-image" class="app-screen">
+                <img data-aos="slide-left" data-aos-duration="1000" src="resources/css/img/app-iPhone.png"
+                    alt="phone-image" class="app-screen">
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="works-step">
@@ -459,16 +461,23 @@
     <script>
         AOS.init();
 
-        //menu bar setting up
+        //toggle menu bar setting up
 
         document.addEventListener('DOMContentLoaded', function () {
             const navToggle = document.querySelector('.nav-toggle');
             const navLinks = document.querySelector('.main-nav');
 
             navToggle.addEventListener('click', function () {
-            navLinks.classList.toggle('show');
+                navLinks.classList.toggle('show');
+            });
+
+            const navLinksList = document.querySelectorAll('.main-nav a');
+            navLinksList.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    navLinks.classList.remove('show');
+                });
+            });
         });
-    });
 
     </script>
 </body>
